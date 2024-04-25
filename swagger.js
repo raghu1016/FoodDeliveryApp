@@ -9,9 +9,13 @@ const options = {
       version: '1.0.0',
     },
     servers: [
+    //   {
+    //     url: "http://localhost:3000/",
+    //     description: "Local server"
+    //   },
       {
-        url: "http://localhost:3000/",
-        description: "Local server"
+        url: "https://fooddeliveryapp-ucy8.onrender.com/",
+        description: "Live server"
       },
     ]
   },
