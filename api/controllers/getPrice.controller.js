@@ -23,10 +23,10 @@ export const getPrice = async (req,res)=>{
 
 export const getPriceDetail = async (req,res)=>{
     try{
-        const query = 'SELECT * FROM PRICING';
+        const query = 'SELECT * FROM item';
 
         const results = await db(query);
-    
+        console.log(results.rows);
         if(results){
             res.status(200).json(results.rows[0]);
         }
